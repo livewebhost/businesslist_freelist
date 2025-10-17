@@ -1,5 +1,7 @@
 const products = [
     { name: "Instagram influencers", link: "instagram-influencers.html", thumb: "assets/images/category/advertising-marketing.webp", groups: 1 },
+    { name: "Youtube influencers", link: "youtube-influencers.html", thumb: "assets/images/category/advertising-marketing.webp", groups: 1 },
+    { name: "Facebook influencers", link: "facebook-influencers.html", thumb: "assets/images/category/advertising-marketing.webp", groups: 1 },
     // ...baaki categories
   ];
 
