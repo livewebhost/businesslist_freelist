@@ -20,10 +20,10 @@ const products = [
     div.className = "i-box-s1";
     div.innerHTML = `
       <div class="thumb">
-        <a href="${product.link}"><img src="${product.thumb}" alt="${product.name}" style="width: 100px;" /></a>
+        <a href="${product.link}"><img src="${product.thumb}" alt="${product.name}" style="width: 60px;" /></a>
       </div>
       <div class="content">
-        <h3><a href="${product.link}">${product.name} (${product.groups})</a></h3>
+        <h3 style="font-size: .85rem;"><a href="${product.link}">${product.name} (${product.groups})</a></h3>
       </div>
     `;
     container.appendChild(div);
