@@ -1,38 +1,49 @@
-          // Example data array
-          const products = [
-            { name: "Mumbai Business Group", link: "https://www.facebook.com/groups/mumbaibusinessgroupindia/", members: 1 },
-            { name: "Business ideas for indian", link: "https://www.facebook.com/groups/businessideasforindian/", members: 24 },
-            { name: "Small business owners/entrepreneurs", link: "https://www.facebook.com/groups/smallbusinessownersentrepreneurs.india/", members: 45 },
-            { name: "India B2B business entreprenuers and startups", link: "https://www.facebook.com/groups/indiab2bbusinessentreprenuersandstartups/", members: 40 },
-            { name: "Business Network India", link: "https://www.facebook.com/groups/businessnetworkindia.fb/", members: 44 },
-            { name: "Promote Your Startup Business", link: "https://www.facebook.com/groups/promoteyourstartupbusiness/", members: 309 },
-            { name: "Business Startups Indian", link: "https://www.facebook.com/groups/businessstartupsindian.bizcomnetwork/", members: 41 },
-          ];
+const products = [
+    { name: "Buy & Sell", link: "facebook-buy-and-sell-groups.html", groups: 19 },
+    { name: "Digital Marketing", link: "facebook-digital-marketing-groups.html", groups: 7 },
+    { name: "Job", link: "facebook-job-groups.html", groups: 6 },
+    { name: "Influencer", link: "facebook-influencer-groups.html", groups: 1 },
+    { name: "Business", link: "facebook-business-groups.html", groups: 7 },
+    { name: "Friend", link: "facebook-friend-groups.html", groups: 1 },
+    { name: "Wholesale", link: "facebook-wholesale-groups.html", groups: 1 },
+    { name: "Classified", link: "facebook-classified-groups.html", groups: 1 },
+    { name: "Loan", link: "facebook-loan-groups.html", groups: 0 },
+    { name: "Follower", link: "facebook-follower-groups.html", groups: 0 },
+    { name: "Fitness", link: "facebook-fitness-groups.html", groups: 0 },
+    { name: "SEO", link: "facebook-seo-groups.html", groups: 0 },
+    { name: "Community", link: "facebook-community-groups.html", groups: 0 },
+    { name: "B2B Business", link: "facebook-b2b-business-groups.html", groups: 0 },
+    { name: "Architects & Interior", link: "facebook-architects-interior-groups.html", groups: 0 },
+    { name: "Skin & Hair", link: "facebook-skin-hair-groups.html", groups: 0 },
+    { name: "Flat and Flatmates", link: "facebook-flat-flatmates-groups.html", groups: 0 },
+    { name: "Real Estate & Property", link: "facebook-real-estate-property-groups.html", groups: 0 },
+    { name: "Citywise", link: "facebook-citywise-groups.html", groups: 0 },
+    // ...baaki categories
+  ];
 
-          const tbody = document.getElementById("cart-products");
+  const container = document.getElementById("catagories-sec-inner");
 
-          // Remove duplicates by link
-          const uniqueProducts = products.filter(
-            (product, index, self) =>
-              index === self.findIndex(p => p.link === product.link)
-          );
+  // Remove duplicates by link
+  const uniqueProducts = products.filter(
+    (product, index, self) =>
+      index === self.findIndex(p => p.link === product.link)
+  );
 
-          // Sort by members (descending)
-          uniqueProducts.sort((a, b) => b.members - a.members);
+  // Sort by groups (descending)
+  uniqueProducts.sort((a, b) => b.groups - a.groups);
 
-          // Add sorted rows to table
-          uniqueProducts.forEach((product, index) => {
-            const tr = document.createElement("tr");
-            tr.id = `product-id1`;
-
-            tr.innerHTML = `
-              <td>
-                <h4 class="group_title">
-                  ${index + 1}. <a href="${product.link}">${product.name}</a>
-                </h4>
-                <p>Total Members: ${product.members}+</p>
-              </td>
-            `;
-
-            tbody.appendChild(tr);
-          });
+  // Append HTML blocks
+  uniqueProducts.forEach(product => {
+    const div = document.createElement("div");
+    div.className = "i-box-s1";
+    div.innerHTML = `
+      <div class="thumb">
+        <img src="assets/images/categoryicons/facebook_groups_category.png" alt="" />
+      </div>
+      <div class="content">
+        <h3>${product.name} (${product.groups})</h3>
+        <a href="${product.link}" class="f-btn">View All<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    `;
+    container.appendChild(div);
+  });
