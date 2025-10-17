@@ -180,52 +180,8 @@
                     <h2 class="s-title">Popular Categories</h2>
                 </div>
                 <div class="row">
-                    <div class="catagories-sec-inner">
-                        <div class="i-box-s1">
-                            <div class="thumb">
-                                <img src="assets/images/icons/catagory-icon-1.svg" alt="" />
-                            </div>
-                            <div class="content">
-                                <h3>Html Website</h3>
-                                <a href="products.html" class="f-btn">View All<i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="i-box-s1">
-                            <div class="thumb">
-                                <img src="assets/images/icons/catagory-icon-2.svg" alt="" />
-                            </div>
-                            <div class="content">
-                                <h3>Ui Ux Design</h3>
-                                <a href="products.html" class="f-btn">View All<i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="i-box-s1">
-                            <div class="thumb">
-                                <img src="assets/images/icons/catagory-icon-3.svg" alt="" />
-                            </div>
-                            <div class="content">
-                                <h3>Wordpress</h3>
-                                <a href="products.html" class="f-btn">View All<i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="i-box-s1">
-                            <div class="thumb">
-                                <img src="assets/images/icons/catagory-icon-4.svg" alt="" />
-                            </div>
-                            <div class="content">
-                                <h3>Html Website</h3>
-                                <a href="#" class="f-btn">Wp-Plugins<i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                        <div class="i-box-s1">
-                            <div class="thumb">
-                                <img src="assets/images/icons/catagory-icon-5.svg" alt="" />
-                            </div>
-                            <div class="content">
-                                <h3>Image Sells</h3>
-                                <a href="products.html" class="f-btn">View All<i class="fa-solid fa-arrow-right"></i></a>
-                            </div>
-                        </div>
+                    <div class="catagories-sec-inner" id="catagories-sec-inner">
+                        Loading...
                     </div>
                 </div>
             </div>
@@ -1162,6 +1118,11 @@
         <script>
             $("#header").load("common/_header.html");
             $("#footer").load("common/footer.html");
+        </script>
+        <script>
+          const script = document.createElement("script");
+          script.src = "database/facebook-group-categories.js?v=" + Date.now();
+          document.head.appendChild(script);
         </script>
         <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
         <script src="assets/js/vendor/waypoints.min.js"></script>
