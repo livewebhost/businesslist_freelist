@@ -20,11 +20,10 @@ const products = [
     div.className = "i-box-s1";
     div.innerHTML = `
       <div class="thumb">
-        <img src="${product.thumb}" alt="${product.name}" />
+        <img src="${product.thumb}" alt="${product.name}" style="width: 100px;" />
       </div>
       <div class="content">
         <h3>${product.name} (${product.groups})</h3>
-        <a href="${product.link}" class="f-btn">View All<i class="fa-solid fa-arrow-right"></i></a>
       </div>
     `;
     container.appendChild(div);
