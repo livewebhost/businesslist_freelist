@@ -1,5 +1,5 @@
 const products = [
-    { name: "Doctors", link: "doctors.html", thumb: "assets/images/category/doctor.png", groups: 1 },
+    { name: "Daily Home Needs", link: "daily-home-needs.html", thumb: "assets/images/category/daily-home-needs.webp", groups: 1 },
     // ...baaki categories
   ];
 
