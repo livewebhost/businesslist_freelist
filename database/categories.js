@@ -1,5 +1,5 @@
 const products = [
-    { name: "Doctors", link: "doctors.html", groups: 1 },
+    { name: "Doctors", link: "doctors.html", thumb: "assets/images/category/doctor.png", groups: 1 },
     // ...baaki categories
   ];
 
@@ -20,7 +20,7 @@ const products = [
     div.className = "i-box-s1";
     div.innerHTML = `
       <div class="thumb">
-        <img src="assets/images/categoryicons/facebook_groups_category.png" alt="" />
+        <img src="${product.thumb}" alt="${product.name}" />
       </div>
       <div class="content">
         <h3>${product.name} (${product.groups})</h3>
