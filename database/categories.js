@@ -1,6 +1,7 @@
 const products = [
-    { name: "Daily Home Needs", link: "daily-home-needs.html", thumb: "assets/images/category/daily-home-needs.webp", groups: 1 },
-    { name: "Business Needs & Office Supplies", link: "business-needs-and-office-supplies.html", thumb: "assets/images/category/daily-business-needs.webp", groups: 1 },
+    { name: "Influencers", link: "influencers.html", thumb: "assets/images/category/advertising-marketing.webp", groups: 1 },
+    { name: "Daily Home Needs", link: "daily-home-needs.html", thumb: "assets/images/category/daily-home-needs.webp", groups: 0 },
+    { name: "Business Needs & Office Supplies", link: "business-needs-and-office-supplies.html", thumb: "assets/images/category/daily-business-needs.webp", groups: 0 },
     // ...baaki categories
   ];
 
